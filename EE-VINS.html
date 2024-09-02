@@ -49,14 +49,15 @@ table.TableGrid
 		<td valign="top" style="width: 1211px; height: 31px; padding: .75pt" align="left">
 		<p class="text">
 		<span lang="en-us"><font face="Calibri" size="5" color="#0000FF">
-		<b> MC-VEO: A Visual-Event Odometry with Accurate 6-DoF Motion Compensation</b></font></span><p class="text">
+		<b> E^2-VINS: An Event-Enhanced Visual-Inertial SLAM Scheme for Dynamic Environments</b></font></span><p class="text">
 		<span lang="en-us"><font face="Calibri" size="4" color="#0000FF">
 		Jiafeng Huang<sup>1</sup>,&nbsp;
+		Shengjie Zhao<sup>1</sup>,&nbsp;
 		Lin Zhang<sup>1</sup>,&nbsp;
-		Tianjun Zhang<sup>1</sup>,&nbsp;
-		and Shengjie Zhao<sup>1</sup>
+		and Hongwei Dai<sup>2</sup>
 		<p>
 		<sup>1</sup>School of Software Engineering, Tongji University, Shanghai, China
+		<sup>2</sup>Jiangsu Ocean University, Lianyungang, China
 		<p>
 	</tr>
 	</table>
@@ -64,14 +65,15 @@ table.TableGrid
 <p><span lang="en-us"><b><font face="Calibri" size="5">Introduction</font></b></span></p>
 <p>
 <span style="font-size: 13pt; font-family: Calibri; color: windowtext" lang="EN-US">
-This is the website for our paper MC-VEO: A Visual-Event Odometry with Accurate 6-DoF Motion Compensation.
+This is the website for our paper E^2-VINS: An Event-Enhanced Visual-Inertial SLAM Scheme for Dynamic Environments.
 
 <p>
-Nowadays, robust and accurate odometries, as the foundation technology of navigation systems, gains significance in autonomous driving and robotic navigation fields.
-Although odometries, especially visual odometries (VOs), have made substantial progress, their application scenarios are still limited by the normal cameras’ frame rate limitations and their low robustness to motion blur.
-The event camera, a recently proposed bionic sensor, seeks to tackle these challenges, offering new possibilities for VO solutions to overcome extreme environments.
-However, integrating event cameras into VO faces challenges like the RGB-event modality gap and the requirement for efficient event processing.
-To address these research gaps to some extent, we propose a novel visual-event odometry, namely MC-VEO (Motion Compensated Visual-Event Odometry).
+Simultaneous Localization and Mapping (SLAM) technology has garnered significant interest in the robotic vision community over the past few decades.
+The rapid development of SLAM technology has resulted in its widespread application across various fields, including autonomous driving, robot navigation, and virtual reality.
+Although SLAM, especially Visual-Inertial SLAM (VI-SLAM), has made substantial progress, most classic algorithms in this field are designed based on the assumption that the observed scene is static.
+In complex real-world environments, the presence of dynamic objects such as pedestrians and vehicles can seriously affect the robustness and accuracy of such systems.
+Event cameras, recently introduced motion-sensitive biomimetic sensors, efficiently capture scene changes (referred to as "events") with high temporal resolution, offering new opportunities to enhance VI-SLAM performance in dynamic environments.
+Integrating this kind of innovative sensors, we propose the first event-enhanced Visual-Inertial SLAM framework specifically designed for dynamic environments, termed E$^2$-VINS.
 
 <hr>
 <p><span lang="en-us"><b><font face="Calibri" size="5">Overall Framwork</font></b></span></p>
